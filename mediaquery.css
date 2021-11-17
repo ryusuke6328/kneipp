@@ -1,0 +1,47 @@
+@media(max-width:487px){
+    *{
+        position: static;
+        display: block;
+        width: 100vw;
+    }
+    .header-logo{
+        width: 100px;
+    }
+    .header-wrapper{
+        margin-top: 0px;
+    }
+    img.header-bg{
+        position: relative;
+        top: 0;
+    }
+    .main-title{
+        transform: scale(1.3);
+        position: relative;
+        top: 25px;
+    }
+    .image-wrapper{
+        text-align: center;
+        width: 100vw;
+        height: auto;
+    }
+    .main-wrapper h2{
+        margin-top: 0px;
+    }
+    .main-wrapper{
+        width: 100vw;
+        object-fit: cover;
+    }
+    .point-img{
+        width: 100%;
+    }
+    .center-title{
+        position: relative;
+        top: 100px;
+        left: 20px;
+    }
+    .top-image{
+        position: relative;
+        top: 100px;
+        left: 0px;
+    }
+}

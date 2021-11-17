@@ -1,0 +1,419 @@
+*{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    margin: 0;
+    max-width: 100%;
+}
+body{
+    background-image: url("images/bg.jpg"); /* 画像 */
+    background-size: cover;               /* 全画面 */
+    background-attachment: fixed;         /* 固定 */
+    background-position: center center;   /* 縦横中央 */
+    overflow-y: hidden;
+}
+header{
+    text-align: center;
+}
+.header-wrapper::after{
+    content: "";
+    z-index: 120;
+    background-image: url(images/punc1.png);
+    background-repeat: no-repeat;
+    height: 20vw;
+    width: 100%;
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: -60px;
+    left: 0;
+    background-size: 100%;
+    
+}
+.header-wrapper{
+    overflow-y: hidden;
+    position:relative;
+    min-height: 64vw;
+
+}
+.header-bg{
+    width: 1350px;
+    height: auto;
+    transform:scale(1.2);
+    position:relative;
+    top:65px;
+}
+
+.header-logo{
+    z-index: 100;
+    position: absolute;
+    top:30px;
+    left:165px;
+}
+.header-title{
+    z-index: 100;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    transform: scale(0.5);
+}
+.header-subtitle{
+    z-index: 100;
+    position: absolute;
+    top: 300px;
+    left: 0px;
+    transform: scale(0.5);
+}
+
+.main-title{
+    display: block;
+    z-index: 10000;
+    width: 50%;
+    margin: auto ;
+    padding-top: 0px;
+    transform:scale(0.55);
+    position: relative;
+    bottom: 40px;
+}
+.main-wrapper{
+    text-align: center;
+    overflow-y: hidden;
+    height: auto;
+    margin-bottom: 50px;
+}
+.main-wrapper h2{
+    transform: scale(0.75);
+    font-weight: normal;
+    margin-top: -60px;
+    line-height: 2.3;
+    opacity: 0.8;
+}
+.button-wrapper{
+    position: relative;
+    overflow-y: hidden;
+    margin-bottom: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 384px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.buy-button{
+    position: relative;
+    display: inline-block;
+    background-color: #0B3B2E;
+    color:white;
+    padding: 11px 90px;
+    text-decoration: none;
+    font-size: 1.7em;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.buy-button::after{
+    font-family: "Font Awesome 5 Free";
+    content: '\f105';
+    font-weight: 900;
+    position: relative;
+    left:20px; 
+    transition: 0.5s;
+
+}
+.buy-button:hover::after{
+    position: relative;
+    left: 35px;
+}
+.buy-button:hover{
+    opacity: 0.7;
+}
+.know-button{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    background-color: #FF8000;
+    color:white;
+    padding: 11px 90px;
+    margin-top: 45px;
+    text-decoration: none;
+    font-size: 1.7em;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+.know-button::after{
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    content: '\f0a5';
+    font-weight: 900;
+    position: relative;
+    left: 40px;
+    transition: 0.5s;
+    animation:5s linear infinite rotation1;
+}
+@keyframes rotation1{
+    0%{ transform:rotatey(0);}
+    100%{ transform:rotatex(360deg); 
+}
+}
+.know-button:hover::after{
+    position: relative;
+    left: 15px;
+}
+.know-button:hover{
+    opacity: 0.7;
+}
+.image-wrapper{
+    position: relative;
+    background-image: url(images/c02_bg1.png),url(images/c02_bg2.png),url(images/c02_bg3.png);
+    background-repeat:no-repeat, repeat-y,no-repeat;
+    background-position:top 0 center,center,bottom 0 center;
+    height: 1050px;
+}
+.center-title{
+    position: absolute;
+    top: 70px;
+    left: 315px;
+}
+.top-image{
+    position: absolute;
+    top: 150px;
+    left: 330px;
+}
+.image-wrapper .link-button{
+    position: absolute;
+    top:450px;
+    left: 420px;
+}
+.image-wrapper .link-button:hover{
+    opacity: 0.8;
+    transition: 0.3s;
+}
+.ginger-wrapper{
+    position: absolute;
+    top: 570px;
+    left: 700px;
+    text-align: center;
+}
+.yuzu-wrapper{
+    position: absolute;
+    top: 570px;
+    left: 330px;
+    text-align: center;
+
+}
+.yuzu-wrapper ul li::before,.ginger-wrapper ul li::before{
+    font-family: "Font Awesome 5 Free";
+    content: '\f00c';
+    font-weight: 900;
+    color: yellow;
+}
+.yuzu-wrapper ul li,.ginger-wrapper ul li{
+    color: green;
+    font-weight: bold;
+    opacity: 0.8;
+    text-align-last: left;
+    position: relative;
+    left: 50px;
+}
+.see-button{
+    font-weight: bold;
+    margin-top: 25px;
+    padding-top: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    background-color:#298A08;
+    color:whitesmoke;
+    width: 240px;
+    height: 35px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px gray;
+
+}
+.see-button::after{
+    font-family: "Font Awesome 5 Free";
+    content: '\f14d';
+    font-weight: 900;
+    position: relative;
+    left: 35px;
+}
+.see-button:hover{
+    position: relative;
+    top: 2px;
+    left: 2px;
+    background-color: #fff;
+    color: black;
+    font-weight:bold;
+    border:solid 2px #298A08;
+    transition: all 0.5s;
+    box-shadow: none;
+}
+.see-button:hover::after{
+    position: relative;
+    left: 10px;
+    transition: 0.5s;
+}
+.point-wrapper{
+    background-color: #FFBF00;
+    height: 1200px;
+    margin-top: 50px;
+    position: relative;
+    overflow-y: hidden;
+}
+.point-wrapper::before{
+    content: "";
+    z-index: 120;
+    background-image: url(images/punc1.png);
+    background-repeat: repeat-x;
+    background-size: 50%;
+    transform: rotate(180deg);
+    height: 4vw;
+    width: 100%;
+    position: absolute;
+}
+.point-wrapper::after{
+    content: "";
+    background-image: url(images/punc1.png);
+    background-repeat: repeat-x;
+    background-size: 100%;
+    height: 7vw;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+.point-img {
+    position: relative;
+    background-image: url(images/c03_bg.png);
+    overflow-y: hidden;
+    height: 1200px;
+}
+.title-display{
+    width: 400px;
+    height: 45px;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+}
+.bath-display{
+    position:absolute;
+    top: 200px;
+    left: 600px;
+}
+.baloon-display{
+    width: 200px;
+    position: relative;
+    top: 200px;
+    left: 400px;
+}
+.catchcopy{
+    width: 600px;
+    position: relative;
+    top: 500px;
+    left: 100px;
+}
+.real-image{
+    position: relative;
+    top: 660px;
+    right: 80px;
+}
+.point-img a img{
+    width: 370px;
+    position: relative;
+    top: 690px;
+    left: 500px;
+}
+.point-img a img:hover{
+    opacity: 0.8;
+}
+.shop-wrapper{
+    height: 400px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    text-align: center;
+    position: relative;
+    overflow-y: hidden;
+}
+.shop-bg1{
+    position: relative;
+    top:10px;
+}
+.shop-title{
+    width: 700px;
+    position: absolute;
+    top: 50px;
+    left: 310px;
+}
+.shop-container h3{
+    position: absolute;
+    top:120px;
+    left: 600px;
+    font-size: 1.3em;
+    color: #585858;
+}
+.text1{
+    position: absolute;
+    left: 350px;
+    top: 180px;
+    font-size: 0.9em;
+}
+.text2{
+    position: absolute;
+    top: 230px;
+    left: 550px;
+    font-size: 0.8em;
+}
+.shop-container p{
+    opacity: 0.8;
+}
+.shop-btn{
+    width: 370px;
+    position: absolute;
+    top: 280px;
+    left: 500px;
+}
+.sns-button img{
+    width: 230px;
+    height: 70px;
+    margin-left: 20px;
+
+}
+.sns-button{
+    margin-top: 80px;
+    text-align: center;
+}
+footer{
+    overflow-y: hidden;
+    height: 280px;
+    background-color: #FFBF00;
+    position: relative;
+}
+footer::before{
+    content: "";
+    background-image: url(images/punc1.png);
+    background-size: 50%;
+    background-repeat: repeat-x;
+    transform:rotate(180deg) ;
+    height: 4vw;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+.privacypolicy{
+    position: relative;
+    left: 600px;
+    top: 20px;
+    font-size: 0.9em;
+    color: black;
+}
+.privacypolicy:hover{
+    text-decoration: none;
+    opacity: 0.9;
+}
+footer p{
+    position: relative;
+    left: 500px;
+    top: 40px;
+    color: #424242;
+    font-size: 0.8em;
+}
+
+
+
+
+
